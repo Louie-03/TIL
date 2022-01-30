@@ -23,7 +23,7 @@
 
 아래 사진에 보이는 경로에 persistence.xml 파일을 추가해 준다.
 
-![image-20220130200710456](images\image-20220130200710456.png)
+![image-20220130200710456](images/image-20220130200710456.png)
 
 ```xml
 <persistence-unit name="hello">
@@ -56,7 +56,7 @@
 
 ## JPA 구동 방식
 
-![image-20220130202939063](images\image-20220130202939063.png)
+![image-20220130202939063](images/image-20220130202939063.png)
 
 - persistence.xml 파일의 설정 정보를 읽고 Persistence 클래스를 생성한다.
 - Persistence 클래스에서 EntityManagerFactory를 생성한다.
@@ -74,7 +74,7 @@ public static void main(String[] args) {
 
 만약 위의 코드를 실행했는데 아래 사진과 같이 NoClassDefFoundError가 발생한다면 위에서 얘기한 jaxb-api의 의존성을 추가하면 해결된다.
 
- ![image-20220130203854916](images\image-20220130203854916.png)
+ ![image-20220130203854916](images/image-20220130203854916.png)
 
 실행에 성공했다면 이제부터는 위에서 얘기한 JPA 구동 방식을 직접 코드로 작성해 보겠다.
 
